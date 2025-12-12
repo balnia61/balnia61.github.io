@@ -1,0 +1,107 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.titulo-principal {
+  background: linear-gradient(to right, #8e44ad, #1abc9c);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.decoracion {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.formulario {
+  padding: 20px;
+  text-align: center;
+}
+
+input {
+  margin: 10px;
+  padding: 8px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+button {
+  background: linear-gradient(to right, #1abc9c, #8e44ad);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #8e44ad, #1abc9c);
+  transform: scale(1.05);
+}
+
+.grafica, .resultados {
+  padding: 20px;
+  text-align: center;
+}
+
+.resultados {
+  background-color: #ffffff;
+  border: 2px solid #dcd6f7;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.metodos {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.metodo {
+  background-color: #ffffff;
+  border: 2px solid #dcd6f7;
+  border-radius: 10px;
+  padding: 15px;
+  width: 45%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.metodo h3 {
+  color: #8e44ad;
+}
+
+#resultado, #pasos-sustitucion, #pasos-igualacion {
+  animation: aparecer 0.8s ease-in-out;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #e8f8f5;
+  font-style: italic;
+  color: #6c3483;
+}

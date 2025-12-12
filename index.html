@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Solucionador y Graficador de Ecuaciones Lineales</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="titulo-principal">
+    <img src="imagenes/encabezado.png" alt="Decoración matemática" class="decoracion">
+    <h1>🧠 Solucionador y Graficador de Ecuaciones Lineales</h1>
+    <p>Explora los métodos de igualación, sustitución y reducción paso a paso</p>
+  </header>
+
+  <!-- FORMULARIO -->
+  <section class="formulario">
+    <label>Ecuación 1 (Ax + By = C):</label>
+    <input type="text" id="ecuacion1" value="x + y = 4">
+    <label>Ecuación 2 (Ax + By = C):</label>
+    <input type="text" id="ecuacion2" value="x - y = -2">
+    <button onclick="resolverSistema()">Resolver y Graficar</button>
+  </section>
+
+  <!-- MÉTODOS UNO AL LADO DEL OTRO -->
+  <section class="metodos">
+    <div class="metodo">
+      <h3>🔁 Método de Sustitución</h3>
+      <div id="pasos-sustitucion"></div>
+    </div>
+    <div class="metodo">
+      <h3>⚖️ Método de Igualación</h3>
+      <div id="pasos-igualacion"></div>
+    </div>
+    <div class="metodo">
+      <h3>➗ Método de Reducción</h3>
+      <div id="pasos-reduccion"></div>
+    </div>
+  </section>
+
+  <!-- GRÁFICA Y RESULTADOS UNO AL LADO DEL OTRO -->
+  <section class="visualizacion">
+    <div class="grafica">
+      <h2>📈 Gráfica de las Ecuaciones</h2>
+      <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+    <div class="resultados">
+      <h2>📍 Resultados</h2>
+      <div id="resultado"></div>
+    </div>
+  </section>
+
+  <!-- BOTÓN PDF DEBAJO DE TODO -->
+  <div class="pdf-export">
+    <button onclick="exportarPDF()">📄 Exportar como PDF</button>
+  </div>
+
+  <!-- FIRMA FINAL -->
+  <footer>
+    <p>Creado con 💙 por <strong>Balnia</strong> — versión educativa</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
